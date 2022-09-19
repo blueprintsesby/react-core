@@ -1,6 +1,7 @@
-
+import React from 'react';
+import logo from './logo.svg';
 // 引入路由导航栏
-import Layout from "./components/layout";
+import Navbar from "./views/Navbar";
 // 引入routes组件
 import routes from "./routes";
 // 引入包管理工具
@@ -10,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Layout />
+      <Navbar />
 
       {/* 设置routes的类型为RouteConfig[]，否则报错 */}
       {renderRoutes(routes as RouteConfig[])}
